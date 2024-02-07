@@ -1,6 +1,6 @@
 <script>
 
-import { mapState, mapMutations } from 'vuex';
+import { mapState, mapMutations, mapActions } from 'vuex';
 
 export default {
   computed: {
@@ -9,7 +9,7 @@ export default {
     })
   },
   methods: {
-    ...mapMutations(["updateUsername"])
+    ...mapActions(["updateUsername"])
   }
 }
 </script>
