@@ -28,7 +28,7 @@ const module = {
     },
     getters: {
         getChannels: (state) => (search) => {
-            return state.channels.filter((channel) => channel.name.toLowerCase().includes(search.toLowerCase()));
+                return state.channels.filter((channel) => channel.name.toLowerCase().includes(search.toLowerCase()));
         }
     }
 }
