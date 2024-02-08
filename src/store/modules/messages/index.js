@@ -26,8 +26,16 @@ const module = {
                     author: 3,
                     message: 'Oooh maaan 👻',
                     timestamp: new Date().toLocaleTimeString(),
-                    read: false,
+                    read: true,
                     channelId: 3
+                },
+                {
+                    id: 3,
+                    author: 3,
+                    message: 'Oooh maar 🌊',
+                    timestamp: new Date().toLocaleTimeString(),
+                    read: false,
+                    channelId: 2
                 }
             ]
         }
