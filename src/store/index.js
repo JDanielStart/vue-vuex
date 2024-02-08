@@ -1,12 +1,19 @@
 import { createStore } from 'vuex'
-import profile from "../modules/profile/index.js"
+import profile from "./modules/profile/index.js"
+import { COMMIT_SET_STATUS } from '../common/mutation-types.js';
 
 const store = createStore({
   state() {
-    return {}
+    return {
+      status: "",
+    }
   },
   getters: {},
-  mutations: {},
+  mutations: {
+    [COMMIT_SET_STATUS](state, value) {
+      state.status = value
+    }
+  },
   actions: {},
   modules: { 
     profile
