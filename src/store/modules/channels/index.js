@@ -35,7 +35,6 @@ const module = {
                 .toLowerCase()
                 .includes(search.toLowerCase())
             ).map((channel) => {
-                console.log(rootGetters);
                 const messages = rootGetters['messages/getUnreadMessages'](channel.id)
                 return {
                     ...channel,

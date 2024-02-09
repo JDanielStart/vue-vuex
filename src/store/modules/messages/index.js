@@ -36,6 +36,14 @@ const module = {
                     timestamp: new Date().toLocaleTimeString(),
                     read: false,
                     channelId: 2
+                },
+                {
+                    id: 4,
+                    author: 1,
+                    message: 'Venga yaa!! 🥞',
+                    timestamp: new Date().toLocaleTimeString(),
+                    read: false,
+                    channelId: 2
                 }
             ]
         }
